@@ -1,11 +1,10 @@
 {
     "name": "qwebs-form",
-    "version": "0.1.66",
-    "description": "Authentication service using JSON Web Token for Qwebs server",
+    "version": "0.1.67",
+    "description": "Form validation and format service for Qwebs server",
     "main": "index.js",
     "dependencies": {
-        "qwebs": "^0.1.66",
-        "jwt-simple": "latest"
+        "qwebs": "^0.1.67"
     },
     "devDependencies": {},
     "scripts": {

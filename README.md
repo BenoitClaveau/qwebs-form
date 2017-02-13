@@ -15,7 +15,7 @@ Form validation and format service for [Qwebs server](https://www.npmjs.com/pack
   * validatePhoneNumber(phoneNumber)
   * formatPhoneNumber(phoneNumber)
 
-### Declare and inject $mongo
+### Declare and inject $form
 
 #### Via routes.json
 ```routes.json

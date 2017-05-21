@@ -1,10 +1,10 @@
 {
     "name": "qwebs-form",
-    "version": "0.1.91",
+    "version": "0.1.92",
     "description": "Form validation and format service for Qwebs server",
     "main": "index.js",
     "dependencies": {
-        "qwebs": "^0.1.91"
+        "qwebs": "^0.1.92"
     },
     "devDependencies": {},
     "scripts": {

@@ -14,13 +14,13 @@ process.on("unhandledRejection", (reason, p) => {
     console.error("Unhandled Rejection at:", p, "reason:", inspect(reason));
 });
 
-describe("format", () => {
+describe("Working days", async () => {
 
-    it("post object -> object", async () => {
-        let qwebs = new Qwebs({ dirname: __dirname });
+    it("nonWorkingDays", async () => {
+        let qwebs = new Qwebs({ dirname: __dirname, config: {} });
         qwebs.inject("$form", "../../index");
         await qwebs.load();
-        const format = await qwebs.resolve("$form-format");
-        expect(format.phoneNumber("0123456789")).to.be("01 23 45 67 89");
+        const workingDays = await qwebs.resolve("$form-working-days");
+        expect(workingDays.nonWorkingDays("fr", 2018).length).to.be(117);
     });
 });
